@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-stone-400">
+    <P class="text-stone-950 text-6xl px-20 mt-20 mx-40 ">COLOR SELECTOR</P><br class="mt-10">
+    <div>
+        <div id="colorDisplay" class="flex w-60 h-60 bg-white border-8 border-gray-500 mx-60 rounded-3xl ">
+        </div>
+        <div class="flex items-center justify-center ">
+            <input type="color" id="colorinput"> <span class="text-2xl">select color</span>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('input', function () {
+            colorDisplay.style.background = colorinput.value;
+        });
+    </script>
+    <div>
+        <div id="colorDis" class="flex w-60 h-60 bg-white border-8 border-gray-500 mx-60 rounded-3xl ">
+        </div>
+        <div class="flex items-center justify-center ">
+            <input type="color" id="colorin"> <span class="text-2xl">select color</span>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('input', function () {
+            colorDis.style.background = colorin.value;
+        });
+    </script>
+    <div>
+        <div id="colrDis" class="flex w-60 h-60 bg-white border-8 border-gray-500 mx-60 rounded-3xl ">
+        </div>
+        <div class="flex items-center justify-center ">
+            <input type="color" id="colrin"> <span class="text-2xl">select color</span>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('input', function () {
+            colrDis.style.background = colrin.value;
+        });
+    </script>
+</body>
+
+
+</html>
